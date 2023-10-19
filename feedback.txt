@@ -1,0 +1,65 @@
+JavaScript
+└ A programming language that can be executed by browsers.(The only programming language browsers can execute)
+└ Change the page dynamically(without loading a different HTML file), do "behind the scenes" calculations and work & much more!
+
+Values
+└ text(string), number, booleans, objects, arrays, ...
+
+variables
+└ labeled data containers
+
+'를 문자로 출력하기 위해서는 \'를 사용한다.
+
+변수 작성시 let 상수 작성시 const
+
+camelCase
+└ Lowercase starting character, 'sub-words' start with uppercase character. No special characters, no blanks.
+
+<script src="app.js" defer></script>
+└ HTML 문서에 js 추가하는 법
+
+Array(배열)
+└ 동일한 값들의 목록
+ex) let hobbies = ['sports', 'cooking', 'reading'];
+└ 대괄호를 사용하여 값들의 목록을 작성 ','로 값들 사이를 구분 항목의 순서는 0번부터 시작. hobbies[0]식으로 사용.
+
+Object(객체)
+└ 다양한 값들의 목록, label 값들을 property(속성)라고 한다. 레이블 값을 쓸 때 variables: Values(문자열, 숫자, 배열, 객체)를 쓰는데 이때 let은 쓰지 않는다. 또 '='이 아닌 ':'을 쓴다.
+function 값들을 method(객체)라고 한다. Object를 사용하기 위해서는 .를 이용해서 사용 job.title
+ex) let job = {title: , place};
+
+문자열 줄 바꿈시 +를 이용하거나 아니면 ``역따움표를 사용한다.
+
+function(함수)
+└ 개발자가 직접 작성한 명령.
+
+변수를 함수 안에서 생성할 경우 그 안에서만 사용 가능.
+
+변수 섀도잉
+└ 외부에서 정의한 함수를 함수 안에서 한번 더 정의하는 것. 동명의 추가적인 변수 생성으로 함수 내부의 값은 함수 외부의 값에 영향을 받지 않는다.
+
+return
+└ 함수를 호출함으로서 값을 얻게 되는 것.
+
+매개변수
+└ 함수에서 수용할 수 있는 인풋, 여러개 사용 가능
+ex)function accessMainGoals (array, order){
+    return array[order];
+}
+
+method
+└ object 안의 함수, 접근 방법은 마침표를 사용. person.greet();
+ex) let person = {
+    name: 'Max', // property
+    greet() { // Method
+        alert('Hello');
+    }
+};
+
+console.log는 개발자 도구 화면에만 출력을 생성(console창에 기록)
+
+문자열은 더하기만 가능
+
+length는 문자열의 경우 문자열의 길이를 배열의 경우 배열의 항목 갯수를 나타낸다.
+
+파일 A에서 함수나 변수를 정의하고 파일 B에서 사용할 수도 있지만, 정의한 파일이 사용하는 파일보다 먼저 링크되어야 한다.
